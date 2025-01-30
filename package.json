@@ -39,6 +39,7 @@
     "typescript": "^5.7.2"
   },
   "dependencies": {
-    "deepseek-extension-vs-code": "file:"
+    "deepseek-extension-vs-code": "file:",
+    "ollama": "^0.5.12"
   }
 }
