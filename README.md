@@ -11,7 +11,8 @@ The **DeepSeek Extension for VS Code** enables seamless interaction with the **D
 - **Lightweight & Privacy-Focused**: Works entirely offline once the model is downloaded.
 
 ### Screenshot Example:
-![DeepSeek Extension in Action](images/deepseek-extension.png)
+![DeepSeek Extension in Action](https://github.com/user-attachments/assets/4d5eed9c-22db-470a-ba47-d9d5544aeaec)
+
 
 ## Requirements
 Before using this extension, ensure you have the following:
