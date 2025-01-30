@@ -55,46 +55,45 @@ export function activate(context: vscode.ExtensionContext) {
 				 }
 			}
 		})
-
-})
+	})
 	context.subscriptions.push(disposable2);
 }
 
 function getWebviewContent() {
-	return `<!DOCTYPE html>
-	<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		// <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		// <title>Deep Seek Chat</title>
-		<style>
-			body{font-family: sans-serif; margin: 1rem;}
-			#prompt {width: 100%; box-sizing: border-box;}
-			#response {border: 1px solid #ccc; margin-top: 1rem; padding:0.5rem min-height: 2rem; overflow-y: auto;}
-		</style>
-	</head>
-	<body>
-		<h2>DeepSeek VS Code</h2>
-		<textarea id="prompt" rows="3" placeholder="Ask Something..."></textarea> <br/>
-		<button id="askBtn>Ask</button>
-		<div id="response"></div>
+	return /*html*/` 
+	<!DOCTYPE html>
+		<html lang="en">
+			<head>
+				<meta charset="UTF-8">
+				<style>
+					body{font-family: sans-serif; margin: 1rem;}
+					#prompt {width: 100%; box-sizing: border-box;}
+					#response {border: 1px solid #ccc; margin-top: 1rem; padding:0.5rem min-height: 2rem; overflow-y: auto;}
+				</style>
+			</head>
+			<body>
+				<h2>DeepSeek VS Code</h2>
+				<textarea id="prompt" rows="3" placeholder="Ask Something..."></textarea> <br/>
+				<button id="askBtn">Ask</button>
+				<div id="response"></div>
 
-		<script>
-			const vscode = acquireVsCodeApi();
-			
-			document.getElementById('askBtn').addEventListener('click', () => {
-				const text = document.getElementById('prompt').value;
-				vscode.postMessage({command: 'chat', text});
-			});
+					<script>
+						const vscode = acquireVsCodeApi();
+						
+						document.getElementById('askBtn').addEventListener('click', () => {
+							const text = document.getElementById('prompt').value;
+							vscode.postMessage({command: 'chat', text});
+						});
 
-			window.addEventListener('message', event => {
-				const {command, text} = event.data;
-				if(command === 'chatResponse'){
-					document.getElementById('response').innerText = text;
-				}
-			});
-	</body>
-	</html>
+						window.addEventListener('message', event => {
+							const {command, text} = event.data;
+							if(command === 'chatResponse'){
+								document.getElementById('response').innerText = text;
+							}
+						});
+					</script>
+			</body>
+		</html>
 	`
 }
 
