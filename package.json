@@ -16,6 +16,10 @@
       {
         "command": "deepseek-extension-vs-code.helloWorld",
         "title": "Hello World"
+      },
+      {
+        "command": "deepseek-extension-vs-code.start",
+        "title": "Chat with DeepSeek"
       }
     ]
   },
@@ -39,7 +43,6 @@
     "typescript": "^5.7.2"
   },
   "dependencies": {
-    "deepseek-extension-vs-code": "file:",
-    "ollama": "^0.5.12"
+    "deepseek-extension-vs-code": "file:"
   }
 }
