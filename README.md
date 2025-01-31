@@ -43,10 +43,6 @@ This extension contributes the following settings:
 - `deepseek.model`: Specify the DeepSeek model to use (e.g., `deepseek-r1:8b`).
 - `deepseek.temperature`: Adjust randomness of responses.
 
-## Usage
-- **Chat with DeepSeek**: Use the command `DeepSeek: Open Chat` to start a conversation.
-- **Inline Completions**: Type comments or code snippets, and the model will suggest completions.
-- **Custom Commands**: Define your own prompt templates for specific use cases.
 
 ## Known Issues
 - The extension may not work if **Ollama is not running**.
@@ -56,9 +52,7 @@ This extension contributes the following settings:
 ### 1.0.0
 - Initial release with basic chat and code generation features.
 
-### 1.1.0
-- Added support for inline suggestions.
-- Improved prompt customization options.
+
 
 ## Following Extension Guidelines
 We follow the [VS Code Extension Guidelines](https://code.visualstudio.com/api/get-started/extension-anatomy) to ensure the best practices in extension development.
