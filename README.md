@@ -17,7 +17,7 @@ The **DeepSeek Extension for VS Code** enables seamless interaction with the **D
 ## Requirements
 Before using this extension, ensure you have the following:
 
-1. **Ollama Installed**: Install Ollama from [ollama.ai](https://ollama.ai) and download the DeepSeek-R1:8B model:
+1. **Ollama Installed**: Install Ollama from [ollama.com](https://ollama.com) and download the DeepSeek-R1:8B model:
    ```sh
    ollama pull deepseek-r1:8b
    ```
@@ -36,29 +36,19 @@ Before using this extension, ensure you have the following:
    ```
 3. Open VS Code and start interacting with DeepSeek via the command palette (`Ctrl+Shift+P` > `DeepSeek: Open Chat`).
 
-## Extension Settings
-This extension contributes the following settings:
-
-- `deepseek.enable`: Enable/disable the extension.
-- `deepseek.model`: Specify the DeepSeek model to use (e.g., `deepseek-r1:8b`).
-- `deepseek.temperature`: Adjust randomness of responses.
-
-## Usage
-- **Chat with DeepSeek**: Use the command `DeepSeek: Open Chat` to start a conversation.
-- **Inline Completions**: Type comments or code snippets, and the model will suggest completions.
-- **Custom Commands**: Define your own prompt templates for specific use cases.
 
 ## Known Issues
 - The extension may not work if **Ollama is not running**.
 - Large prompts may slow down response times.
 
+## Usage
+- **Chat with DeepSeek**: Use the command `DeepSeek: Open Chat` to start a conversation.
+
 ## Release Notes
 ### 1.0.0
 - Initial release with basic chat and code generation features.
 
-### 1.1.0
-- Added support for inline suggestions.
-- Improved prompt customization options.
+
 
 ## Following Extension Guidelines
 We follow the [VS Code Extension Guidelines](https://code.visualstudio.com/api/get-started/extension-anatomy) to ensure the best practices in extension development.
