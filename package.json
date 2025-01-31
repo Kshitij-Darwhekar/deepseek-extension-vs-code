@@ -2,6 +2,7 @@
   "name": "deepseek-extension-vs-code",
   "displayName": "DeepSeek-Extension-VS-Code",
   "description": "",
+  "publisher": "Horizon",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.96.0"
@@ -13,10 +14,6 @@
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
-      {
-        "command": "deepseek-extension-vs-code.helloWorld",
-        "title": "Hello World"
-      },
       {
         "command": "deepseek-extension-vs-code.start",
         "title": "Chat with DeepSeek"
@@ -43,6 +40,8 @@
     "typescript": "^5.7.2"
   },
   "dependencies": {
-    "deepseek-extension-vs-code": "file:"
+    "deepseek-extension-vs-code": "file:",
+    "ollama": "^0.5.12",
+    "whatwg-fetch": "^3.6.20"
   }
 }
