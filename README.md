@@ -17,7 +17,7 @@ The **DeepSeek Extension for VS Code** enables seamless interaction with the **D
 ## Requirements
 Before using this extension, ensure you have the following:
 
-1. **Ollama Installed**: Install Ollama from [ollama.ai](https://ollama.ai) and download the DeepSeek-R1:8B model:
+1. **Ollama Installed**: Install Ollama from [ollama.com](https://ollama.com) and download the DeepSeek-R1:8B model:
    ```sh
    ollama pull deepseek-r1:8b
    ```
