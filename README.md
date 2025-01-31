@@ -36,17 +36,13 @@ Before using this extension, ensure you have the following:
    ```
 3. Open VS Code and start interacting with DeepSeek via the command palette (`Ctrl+Shift+P` > `DeepSeek: Open Chat`).
 
-## Extension Settings
-This extension contributes the following settings:
-
-- `deepseek.enable`: Enable/disable the extension.
-- `deepseek.model`: Specify the DeepSeek model to use (e.g., `deepseek-r1:8b`).
-- `deepseek.temperature`: Adjust randomness of responses.
-
 
 ## Known Issues
 - The extension may not work if **Ollama is not running**.
 - Large prompts may slow down response times.
+
+## Usage
+- **Chat with DeepSeek**: Use the command `DeepSeek: Open Chat` to start a conversation.
 
 ## Release Notes
 ### 1.0.0
